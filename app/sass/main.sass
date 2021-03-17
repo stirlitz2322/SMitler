@@ -53,6 +53,9 @@ body
 .h1, .h2, .h3, .h4, .h5, .h6
 	line-height: 1.4
 	text-transform: uppercase
+
+.text-center
+	text-align: center
 .logo
 	img
 		width: 125px
@@ -570,6 +573,29 @@ select
 	.button
 		margin-top: 40px
 		
+.reviews
+	text-align: center
+.quotes
+	position: absolute
+	width: 100%
+	&::before, &::after
+		content: ",,"
+		position: absolute
+		top: 182px
+		font-size: 56px
+		color: $accent
+		font-family: 'Times New Roman', serif
+		font-weight: bold
+		line-height: 0
+		transform: rotate(180deg)
+		display: block
+	&::before
+		top: 220px
+		left: -60px
+	&::after
+		right: -60px
+		transform: rotate(0)
+			
 // &__nav:after, &__stage:after
 // &__nav:before, &__stage:before  СІРА ЛІНІЯ ПРАВОРУЧ І ЛІВОРУЧ
 // 	display: none
