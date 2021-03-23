@@ -70,7 +70,8 @@ $(function() {
 		loop: true,
 		items: 1,
 		smartSpeed: 700,
-		nav: false
+		nav: false,
+		autoHeight: true
 	});
 
 	//E-mail Ajax Send

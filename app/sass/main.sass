@@ -573,8 +573,32 @@ select
 	.button
 		margin-top: 40px
 		
-.reviews
+.review
 	text-align: center
+
+.review
+	margin-top: 20px
+	&-header
+		font-family: 'Times New Roman', serif
+		font-style: italic
+		font-size: 30px
+		font-weight: bold
+	&-date
+		font-family: 'Times New Roman', serif
+		font-style: italic
+		font-size: 15px
+		margin-top: 2px
+		color: #888
+	&-stars
+		margin: 18px 0 35px
+		font-size: 14px
+		color: $accent
+		.fa
+			margin: 0 2.5px
+	&-text
+		color: #959899
+		
+		
 .quotes
 	position: absolute
 	width: 100%
@@ -595,6 +619,22 @@ select
 	&::after
 		right: -60px
 		transform: rotate(0)
+.owl-dots
+	width: 100%
+	text-align: center
+	display: inline-block
+	margin-top: 60px
+	.owl-dot
+		width: 8px
+		height: 8px
+		background-color: #fff
+		border-radius: 10em
+		display: inline-block
+		margin: 5px
+		transition: background-color .5s ease, transform .5s ease
+		&.active
+			background-color: $accent
+			transform: scale(1.3)
 			
 // &__nav:after, &__stage:after
 // &__nav:before, &__stage:before  СІРА ЛІНІЯ ПРАВОРУЧ І ЛІВОРУЧ
